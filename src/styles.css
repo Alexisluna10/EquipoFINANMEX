@@ -18,4 +18,5 @@ html, body, app-root {
     --border-color: #D9DEE8;
     --input-bg: #F0F2F5; 
     --bg-card: rgba(230, 235, 240, 0.85);
+    --surface-color: #384C70; 
 }
