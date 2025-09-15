@@ -1,0 +1,83 @@
+<main class="VISTA-CLIENTE">
+  <div class="overlap-wrapper">
+    <div class="overlap">
+      <div class="fondo">
+        <div class="overlap-group">
+          <img class="image" src="assets/fondo-cliente.png" alt="Fondo arquitectónico del banco" />
+          <div class="rectangle"></div>
+        </div>
+      </div>
+      <div class="bar"></div>
+      <section class="informacin" aria-labelledby="user-greeting">
+        <h1 class="nombre" id="user-greeting">Hola, {{ userName }}.</h1>
+        <p class="dinero" aria-label="Saldo disponible: {{ accountBalance }} {{ currency }}">
+          <span class="text-wrapper">{{ accountBalance }}</span>
+          <span class="span"> {{ currency }}</span>
+        </p>
+      </section>
+      <nav class="banking-services" aria-label="Servicios bancarios">
+        <button class="retiros" type="button" aria-label="Realizar retiros" (click)="onRetirosClick()">
+          <span class="div">Retiros</span>
+          <img class="group" src="assets/Retiros.png" alt="Icono de retiros" />
+        </button>
+        <button class="pagos" type="button" aria-label="Realizar pagos" (click)="onPagosClick()">
+          <span class="div">Pagos</span>
+          <img class="group" src="assets/pagos.png" alt="Icono de pagos" />
+        </button>
+        <button class="transferencias" type="button" aria-label="Realizar transferencias" (click)="onTransferenciasClick()">
+          <span class="nombre-2">Transferencias</span>
+          <div class="div-2">
+            <div class="consultas"></div>
+            <img class="frame" src="assets/transferencias.png" alt="Icono de transferencias" />
+          </div>
+        </button>
+        <button class="solicitar-prstamo" type="button" aria-label="Solicitar préstamo" (click)="onSolicitarPrestamoClick()">
+          <span class="div">Solicitar préstamo</span>
+          <img class="group" src="assets/prestamos.png" alt="Icono de préstamo" />
+        </button>
+        <button class="solicitar-crdito" type="button" aria-label="Solicitar crédito" (click)="onSolicitarCreditoClick()">
+          <span class="nombre-2">Solicitar crédito</span>
+          <div class="div-2"></div>
+        </button>
+        <button class="consultas-2" type="button" aria-label="Realizar consultas" (click)="onConsultasClick()">
+          <span class="div">Consultas</span>
+          <div class="group-wrapper">
+            <div class="div-wrapper">
+              <div class="group-2"></div>
+            </div>
+          </div>
+        </button>
+      </nav>
+      <div class="rectangle-2"></div>
+      <div class="frame-wrapper">
+        <div class="img-wrapper">
+          <img class="img" src="assets/solicitar.png" alt="Icono adicional" />
+        </div>
+      </div>
+      <button class="opciones" type="button" aria-label="Menú de opciones" (click)="onOpcionesClick()">
+        <div class="group-3"></div>
+      </button>
+      <header class="logo" role="banner">
+        <div class="overlap-2">
+          <h2 class="FINANMEX">
+            <span class="span"> FINAN</span>
+            <span class="text-wrapper-2">MEX </span>
+          </h2>
+          <p class="text-wrapper-3">Tu futuro financiero</p>
+        </div>
+        <div class="logo-2">
+          <div class="overlap-group-wrapper">
+            <div class="overlap-group-2">
+              <div class="ellipse"></div>
+              <img
+                class="captura-de-pantalla"
+                src="assets/logo.png"
+                alt="Logo de FINANMEX"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+</main>

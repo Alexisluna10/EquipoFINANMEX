@@ -1,0 +1,495 @@
+/* Estilos de globals.css que afectan a este componente */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+/* Estilos de style.css */
+.VISTA-CLIENTE {
+  background-color: #233460;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  width: 100vw;
+}
+
+.VISTA-CLIENTE .overlap-wrapper {
+  background-color: #233460;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+}
+
+.VISTA-CLIENTE .overlap {
+  position: relative;
+  width: 1569px;
+  height: 1125px;
+  top: -10px;
+  left: -129px;
+}
+
+.VISTA-CLIENTE .fondo {
+  position: absolute;
+  width: 1275px;
+  height: 1125px;
+  top: 0;
+  left: 0;
+}
+
+.VISTA-CLIENTE .overlap-group {
+  position: relative;
+  width: 1146px;
+  height: 1072px;
+  left: 129px;
+}
+
+.VISTA-CLIENTE .image {
+  position: absolute;
+  width: 1058px;
+  height: 933px;
+  top: 101px;
+  left: 0;
+  aspect-ratio: 1.16;
+}
+
+.VISTA-CLIENTE .rectangle {
+  position: absolute;
+  width: 100px;
+  height: 1067px;
+  top: 2px;
+  left: 1002px;
+  background-color: #233460;
+  transform: rotate(-4.77deg);
+}
+
+.VISTA-CLIENTE .bar {
+  position: absolute;
+  width: 109px;
+  height: 1440px;
+  top: -655px;
+  left: 794px;
+  background-color: #2451bb;
+  transform: rotate(-90deg);
+  box-shadow: inset 0px 4px 14.9px 6px #00000040;
+}
+
+.VISTA-CLIENTE .informacin {
+  position: absolute;
+  width: 451px;
+  height: 125px;
+  top: 172px;
+  left: 625px;
+}
+
+.VISTA-CLIENTE .nombre {
+  width: 346px;
+  top: 0;
+  left: 51px;
+  font-size: 48px;
+  position: absolute;
+  font-family: "Abhaya Libre-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.VISTA-CLIENTE .dinero {
+  position: absolute;
+  width: 447px;
+  top: 80px;
+  left: 0;
+  font-family: "Abhaya Libre-Bold", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.VISTA-CLIENTE .text-wrapper {
+  color: #20f323;
+}
+
+.VISTA-CLIENTE .span {
+  color: #ffffff;
+}
+
+.VISTA-CLIENTE .retiros {
+  position: absolute;
+  width: 202px;
+  height: 244px;
+  top: 400px;
+  left: 868px;
+}
+
+.VISTA-CLIENTE .div {
+  position: absolute;
+  width: 138px;
+  top: 213px;
+  left: 31px;
+  font-family: "Abhaya Libre-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.VISTA-CLIENTE .group {
+  position: absolute;
+  width: 208px;
+  height: 208px;
+  top: 0;
+  left: -4px;
+}
+
+.VISTA-CLIENTE .pagos {
+  position: absolute;
+  width: 202px;
+  height: 244px;
+  top: 400px;
+  left: 1104px;
+}
+
+.VISTA-CLIENTE .transferencias {
+  position: absolute;
+  width: 204px;
+  height: 244px;
+  top: 400px;
+  left: 630px;
+}
+
+.VISTA-CLIENTE .nombre-2 {
+  width: 201px;
+  top: 213px;
+  left: 0;
+  font-size: 32px;
+  position: absolute;
+  font-family: "Abhaya Libre-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.VISTA-CLIENTE .div-2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 2px;
+  background-color: #384c70;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.VISTA-CLIENTE .consultas {
+  position: absolute;
+  width: 155px;
+  height: 155px;
+  top: 21px;
+  left: 22px;
+  background-color: #233460;
+  border-radius: 77.5px;
+  border: 5px solid;
+  border-color: #50c41f;
+  box-shadow: inset 0px 4px 4px #00000040;
+}
+
+.VISTA-CLIENTE .frame {
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  top: 57px;
+  left: 57px;
+}
+
+.VISTA-CLIENTE .solicitar-prstamo {
+  width: 202px;
+  left: 868px;
+  position: absolute;
+  height: 244px;
+  top: 677px;
+}
+
+.VISTA-CLIENTE .solicitar-crdito {
+  width: 204px;
+  left: 630px;
+  position: absolute;
+  height: 244px;
+  top: 677px;
+}
+
+.VISTA-CLIENTE .consultas-2 {
+  position: absolute;
+  width: 202px;
+  height: 244px;
+  top: 400px;
+  left: 394px;
+}
+
+.VISTA-CLIENTE .group-wrapper {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  background-color: #384c70;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.VISTA-CLIENTE .div-wrapper {
+  position: relative;
+  width: 155px;
+  height: 155px;
+  top: 21px;
+  left: 22px;
+  background-color: #233460;
+  border-radius: 77.5px;
+  border: 5px solid;
+  border-color: #50c41f;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.VISTA-CLIENTE .group-2 {
+  position: relative;
+  width: 78px;
+  height: 25px;
+  top: 60px;
+  left: 34px;
+  background-image: url('../../assets/consultas.png');
+  background-size: 100% 100%;
+}
+
+.VISTA-CLIENTE .rectangle-2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 706px;
+  left: 656px;
+  background-color: #233460;
+  border-radius: 10px;
+  border: 5px solid;
+  border-color: #50c41f;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.VISTA-CLIENTE .frame-wrapper {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  top: 734px;
+  left: 688px;
+}
+
+.VISTA-CLIENTE .img-wrapper {
+  position: relative;
+  height: 85px;
+  top: -1px;
+}
+
+.VISTA-CLIENTE .img {
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  top: 1px;
+  left: 1px;
+}
+
+.VISTA-CLIENTE .opciones {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  top: 40px;
+  left: 151px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.VISTA-CLIENTE .group-3 {
+  position: relative;
+  height: 30px;
+  top: 5px;
+  background-image: url('../../assets/opciones.png');
+  background-size: 100% 100%;
+}
+
+.VISTA-CLIENTE .logo {
+  position: absolute;
+  width: 359px;
+  height: 94px;
+  top: 18px;
+  left: 1204px;
+}
+
+.VISTA-CLIENTE .overlap-2 {
+  position: absolute;
+  width: 267px;
+  height: 94px;
+  top: 0;
+  left: 0;
+}
+
+.VISTA-CLIENTE .FINANMEX {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Konkhmer Sleokchher-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.VISTA-CLIENTE .text-wrapper-2 {
+  color: #79a6ff;
+}
+
+.VISTA-CLIENTE .text-wrapper-3 {
+  position: absolute;
+  top: 58px;
+  left: 36px;
+  font-family: "Konkhmer Sleokchher-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.VISTA-CLIENTE .logo-2 {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  top: 4px;
+  left: 270px;
+}
+
+.VISTA-CLIENTE .overlap-group-wrapper {
+  height: 85px;
+}
+
+.VISTA-CLIENTE .overlap-group-2 {
+  position: relative;
+  width: 85px;
+  height: 85px;
+}
+
+.VISTA-CLIENTE .ellipse {
+  position: absolute;
+  width: 81px;
+  height: 85px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 40.59px / 42.5px;
+}
+
+.VISTA-CLIENTE .captura-de-pantalla {
+  position: absolute;
+  width: 78px;
+  height: 59px;
+  top: 14px;
+  left: 7px;
+  aspect-ratio: 1.32;
+}
+
+/* Additional styles for semantic elements and accessibility */
+.VISTA-CLIENTE .banking-services {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.VISTA-CLIENTE .banking-services > * {
+  pointer-events: auto;
+}
+
+.VISTA-CLIENTE .retiros,
+.VISTA-CLIENTE .pagos,
+.VISTA-CLIENTE .transferencias,
+.VISTA-CLIENTE .solicitar-prstamo,
+.VISTA-CLIENTE .solicitar-crdito,
+.VISTA-CLIENTE .consultas-2 {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.VISTA-CLIENTE .retiros:hover,
+.VISTA-CLIENTE .pagos:hover,
+.VISTA-CLIENTE .transferencias:hover,
+.VISTA-CLIENTE .solicitar-prstamo:hover,
+.VISTA-CLIENTE .solicitar-crdito:hover,
+.VISTA-CLIENTE .consultas-2:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.VISTA-CLIENTE .retiros:focus-visible,
+.VISTA-CLIENTE .pagos:focus-visible,
+.VISTA-CLIENTE .transferencias:focus-visible,
+.VISTA-CLIENTE .solicitar-prstamo:focus-visible,
+.VISTA-CLIENTE .solicitar-crdito:focus-visible,
+.VISTA-CLIENTE .consultas-2:focus-visible {
+  outline: 3px solid #50c41f;
+  outline-offset: 2px;
+  border-radius: 15px;
+}
+
+.VISTA-CLIENTE .opciones {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.VISTA-CLIENTE .opciones:hover {
+  transform: scale(1.1);
+}
+
+.VISTA-CLIENTE .opciones:focus-visible {
+  outline: 3px solid #50c41f;
+  outline-offset: 2px;
+  border-radius: 5px;
+}
+
+.VISTA-CLIENTE .nombre {
+  margin: 0;
+}
+
+.VISTA-CLIENTE .FINANMEX {
+  margin: 0;
+  font-size: 48px;
+}
