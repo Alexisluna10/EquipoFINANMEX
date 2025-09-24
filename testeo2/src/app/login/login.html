@@ -1,0 +1,69 @@
+<main class="LOGIN">
+  <div class="image-container">
+    <img
+      class="background-image"
+      src="assets/image-3.png"
+      alt="Edificio moderno de un banco"
+    />
+    <div class="image-overlay"></div>
+
+    <div class="text-content">
+      <div class="welcome-text">
+        <h1>Bienvenido a FINANMEX</h1>
+        <p>Por favor ingresa tu Email y Contraseña para poder entrar.</p>
+      </div>
+      <nav class="registration-link">
+        <p>
+          <span>¿Aun no tienes cuenta? </span>
+          <a href="/crear-cuenta"> Regístrate aquí. </a>
+        </p>
+      </nav>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <header class="logo-header">
+      <img
+        src="assets/logo-finanmex1.png"
+        alt="Logo de FINANMEX"
+        class="form-logo"
+      />
+    </header>
+
+    <form class="login-form" (ngSubmit)="onLogin()" #loginForm="ngForm">
+      <div class="input-group">
+        <label for="email-input">Email</label>
+        <div class="input-wrapper">
+          <img class="input-icon" src="assets/sobre.png" alt="" />
+          <input
+            type="email"
+            id="email-input"
+            name="email"
+            class="styled-input"
+            placeholder="Introduce tu Email"
+            required
+            [(ngModel)]="email"
+          />
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="password-input">Contraseña</label>
+        <div class="input-wrapper">
+          <img class="input-icon" src="assets/Group.png" alt="" />
+          <input
+            type="password"
+            id="password-input"
+            name="password"
+            class="styled-input"
+            placeholder="Introduce tu Contraseña"
+            required
+            [(ngModel)]="password"
+          />
+        </div>
+      </div>
+      
+      <button type="submit" class="entrar-btn">Entrar</button>
+    </form>
+  </div>
+</main>

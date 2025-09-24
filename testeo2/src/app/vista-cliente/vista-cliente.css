@@ -1,0 +1,228 @@
+/* Archivo: vista-cliente.component.css */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+/* --- Configuración Global --- */
+:host {
+  display: block;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.VISTA-CLIENTE {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #233460;
+  overflow-x: hidden;
+}
+
+/* ====================================================== */
+/* HEADER / NAVBAR */
+/* ====================================================== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+  background-color: #2451bb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.main-header .menu-toggle {
+  width: 45px;
+  height: 45px;
+  background: transparent url('../../assets/logout.png') center/30px no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.main-header .menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+.main-header .logo-img {
+  height: 50px;
+  width: auto;
+}
+
+/* ====================================================== */
+/* ÁREA DE CONTENIDO PRINCIPAL */
+/* ====================================================== */
+.main-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* El filtro oscurece la imagen para que el texto resalte */
+  filter: brightness(0.5);
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Degradado sutil para un mejor acabado visual */
+  background: linear-gradient(180deg, rgba(35, 52, 96, 0.3) 0%, rgba(35, 52, 96, 0.7) 100%);
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px; /* Ancho máximo del contenido */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Información del usuario --- */
+.informacin {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.informacin .nombre {
+  font-family: "Abhaya Libre-Bold", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.informacin .dinero {
+  font-family: "Abhaya Libre-Bold", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.informacin .dinero .text-wrapper {
+  color: #20f323;
+}
+
+.informacin .dinero .span {
+  font-size: 48px; /* Hacemos "MXN" un poco más pequeño */
+  color: #ffffff;
+}
+
+/* --- Contenedor de botones de servicios --- */
+.banking-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Espacio entre botones */
+  width: 100%;
+  max-width: 900px;
+}
+
+/* --- Estilo base para cada botón --- */
+.service-button {
+  background-color: rgba(56, 76, 112, 0.8); /* Fondo semitransparente */
+  border: 2px solid transparent;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #ffffff;
+  font-family: "Abhaya Libre-Bold", Helvetica, sans-serif;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-button img {
+  width: 80px; /* Tamaño del ícono */
+  height: 80px;
+  object-fit: contain;
+}
+
+.service-button:hover {
+  transform: translateY(-5px);
+  border-color: #50c41f; /* Borde verde al pasar el mouse */
+  background-color: rgba(69, 90, 130, 0.9);
+}
+
+.service-button:focus-visible {
+  outline: none;
+  border-color: #50c41f;
+  box-shadow: 0 0 0 3px rgba(80, 196, 31, 0.5);
+}
+
+/* ====================================================== */
+/* RESPONSIVIDAD */
+/* ====================================================== */
+@media (max-width: 960px) {
+  .banking-services {
+    max-width: 600px; /* Ajustamos el ancho para que quepan 2 o 3 columnas */
+  }
+  .service-button {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 0 20px;
+  }
+  .main-header .logo-img {
+    height: 40px;
+  }
+  .informacin .nombre {
+    font-size: 36px;
+  }
+  .informacin .dinero {
+    font-size: 48px;
+  }
+  .informacin .dinero .span {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banking-services {
+    /* Los botones se apilan en dos columnas */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .service-button {
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+  }
+  .service-button img {
+    width: 60px;
+    height: 60px;
+  }
+}

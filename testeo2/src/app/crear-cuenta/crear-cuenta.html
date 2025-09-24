@@ -1,0 +1,82 @@
+<div class="full-screen-background"></div>
+
+<main class="page-content">
+  <header class="main-header">
+    <h1>Crea tu cuenta</h1>
+  </header>
+
+  <div class="content-area">
+    
+    <div class="logo-container">
+      <img src="/assets/logo-finanmex.png" alt="Logo FINANMEX">
+    </div>
+
+    <div class="form-card">
+      <form class="registration-form">
+        <div class="form-group">
+          <label for="fullName">Nombre completo *</label>
+          <input type="text" id="fullName" placeholder="Ej. Axel Rodrigo Campos">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" placeholder="Ej. ejemplo@gmail.com">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" placeholder="Ej. 5624607646">
+        </div>
+        <div class="form-group">
+          </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña *</label>
+          <input type="password" id="password" placeholder="Escribe tu contraseña">
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirmar contraseña *</label>
+          <input type="password" id="confirmPassword" placeholder="Confirmar tu contraseña">
+        </div>
+
+        <div class="form-group">
+          <label for="birthDate">Fecha de nacimiento</label>
+          <input type="text" id="birthDate" placeholder="DD / MM / YY" onfocus="(this.type='date')" onblur="(this.type='text')">
+        </div>
+        <div class="form-group">
+          <label for="curp">CURP *</label>
+          <input type="text" id="curp" placeholder="Ej. LUSA040110HGHNNLA7">
+        </div>
+        
+        <p class="documents-info">Estos documentos son necesarios para cumplir con la regulación y proteger tu cuenta.</p>
+
+        <div class="form-group">
+            <label for="ine-file">INE *</label>
+            <label class="upload-btn" for="ine-file">
+              <span>Subir documento</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/></svg>
+            </label>
+            <input type="file" id="ine-file" hidden>
+        </div>
+        <div class="form-group">
+            <label for="address-proof">Comprobante de domicilio *</label>
+            <label class="upload-btn" for="address-proof">
+              <span>Subir documento</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/></svg>
+            </label>
+            <input type="file" id="address-proof" hidden>
+        </div>
+
+        <p class="file-info">Sube tu INE por ambos lados. Formatos permitidos: PDF, JPG, PNG. Tamaño máx. 5MB.</p>
+      </form>
+    </div>
+
+  </div>
+
+  <footer class="page-footer">
+    <div class="login-redirect">
+      <p>¿Ya tienes una cuenta?</p>
+      <a href="/login">[Inicia sesión]</a>
+    </div>
+    <button class="submit-btn">Crear cuenta</button>
+  </footer>
+</main>

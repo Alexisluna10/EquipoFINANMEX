@@ -1,0 +1,51 @@
+<main class="VISTA-CLIENTE">
+
+  <header class="main-header">
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" (click)="onOpcionesClick()"></button>
+    <img class="logo-img" src="assets/logo-finanmex1.png" alt="Logo de FINANMEX" />
+  </header>
+
+  <div class="main-content">
+    <div class="background-container">
+      <img class="background-image" src="assets/fondo-cliente.png" alt="Fondo arquitectónico del banco" />
+      <div class="background-overlay"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <section class="informacin" aria-labelledby="user-greeting">
+        <h1 class="nombre" id="user-greeting">Hola, {{ userName }}.</h1>
+        <p class="dinero" aria-label="Saldo disponible: {{ accountBalance }} {{ currency }}">
+          $<span class="text-wrapper">{{ accountBalance }}</span>
+          <span class="span"> {{ currency }}</span>
+        </p>
+      </section>
+
+      <nav class="banking-services" aria-label="Servicios bancarios">
+        <button class="service-button" type="button" aria-label="Realizar consultas" (click)="onConsultasClick()">
+          <img src="assets/consultas.png" alt="" />
+          <span>Consultas</span>
+        </button>
+        <button class="service-button" type="button" aria-label="Realizar transferencias" (click)="onTransferenciasClick()">
+          <img src="assets/transferencias.png" alt="" />
+          <span>Transferencias</span>
+        </button>
+        <button class="service-button" type="button" aria-label="Realizar retiros" (click)="onRetirosClick()">
+          <img src="assets/Retiros.png" alt="" />
+          <span>Retiros</span>
+        </button>
+        <button class="service-button" type="button" aria-label="Realizar pagos" (click)="onPagosClick()">
+          <img src="assets/pagos.png" alt="" />
+          <span>Pagos</span>
+        </button>
+        <button class="service-button" type="button" aria-label="Solicitar crédito" (click)="onSolicitarCreditoClick()">
+          <img src="assets/solicitar.png" alt="" />
+          <span>Solicitar crédito</span>
+        </button>
+        <button class="service-button" type="button" aria-label="Solicitar préstamo" (click)="onSolicitarPrestamoClick()">
+          <img src="assets/prestamos.png" alt="" />
+          <span>Solicitar préstamo</span>
+        </button>
+      </nav>
+    </div>
+  </div>
+</main>
