@@ -1,0 +1,202 @@
+/* ESTILOS GENERALES */
+.LOGIN {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #233460; /* Color de fondo del formulario */
+  font-family: "Inter", Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* --- COLUMNA IZQUIERDA (IMAGEN) --- */
+.image-container {
+  flex: 0 0 60%; /* La imagen ocupa el 60% del ancho */
+  position: relative;
+  /* El corte diagonal se hace con clip-path */
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+}
+
+/* Capa semitransparente para opacar la imagen de fondo */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 25, 47, 0.5); /* Negro con 50% de opacidad */
+  z-index: 1;
+}
+
+/* Contenedor para todo el texto sobre la imagen */
+.text-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%; /* Ajusta el ancho para no salirse por el corte diagonal */
+  height: 100%;
+  z-index: 2; /* Se asegura que el texto esté sobre la capa de opacidad */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  color: #ffffff;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Texto de bienvenida */
+.welcome-text {
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-text h1 {
+  font-family: "Konkhmer Sleokchher-Regular", Helvetica, sans-serif;
+  font-size: 3.5rem; /* 56px */
+  margin: 0;
+}
+
+.welcome-text p {
+  font-family: "Konkhmer Sleokchher-Regular", Helvetica, sans-serif;
+  font-size: 1.25rem; /* 20px */
+  margin-top: 1rem;
+  max-width: 450px;
+}
+
+/* Link de registro en la parte inferior */
+.registration-link {
+  position: absolute;
+  bottom: 4rem; /* Lo posiciona abajo */
+  text-align: center;
+  font-size: 1.125rem; /* 18px */
+}
+
+.registration-link a {
+  color: #47cdff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* --- COLUMNA DERECHA (FORMULARIO) --- */
+.form-container {
+  flex: 1; /* Ocupa el espacio restante (40%) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo-header {
+  margin-bottom: 2.5rem; /* Espacio entre el logo y el formulario */
+}
+
+.form-logo {
+  max-width: 300px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Espacio entre los campos de input */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Espacio entre la etiqueta (label) y el input */
+}
+
+.input-group label {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem; /* 16px */
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 20px;
+  opacity: 0.7;
+}
+
+.styled-input {
+  width: 100%;
+  height: 55px;
+  background-color: transparent;
+  border: 2px solid #404a63;
+  border-radius: 8px;
+  padding-left: 50px; /* Espacio para el ícono */
+  color: #ffffff;
+  font-size: 1rem;
+}
+.styled-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.entrar-btn {
+  width: 100%;
+  height: 55px;
+  background-color: #3d6cf0;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem; /* Espacio extra antes del botón */
+}
+
+.entrar-btn:hover {
+  background-color: #2c5bc7;
+}
+
+/* --- AJUSTES RESPONSIVOS --- */
+@media (max-width: 1024px) {
+  .LOGIN {
+    flex-direction: column; /* Apila las columnas en pantallas pequeñas */
+  }
+
+  .image-container {
+    flex: 0 0 40vh; /* La imagen ocupa el 40% de la altura de la pantalla */
+    width: 100%;
+    clip-path: none; /* Se quita el corte diagonal */
+  }
+
+  .text-content {
+      width: 100%; /* El texto ahora puede ocupar todo el ancho */
+  }
+
+  .welcome-text h1 {
+      font-size: 2.5rem;
+  }
+  .welcome-text p {
+      font-size: 1rem;
+  }
+  .registration-link {
+      bottom: 1.5rem;
+      font-size: 1rem;
+  }
+
+  .form-container {
+    flex-grow: 1; /* Ocupa el resto de la altura */
+    width: 100%;
+    justify-content: center;
+  }
+}

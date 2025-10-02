@@ -1,0 +1,25 @@
+<h2>Lista de Usuarios</h2>
+
+
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Correo</th>
+      <th>Contraseña</th>
+      <th>Fecha Creación</th>
+      <th>Rol</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (u of usuarios$ | async; track u.USU_ID) {
+      <tr>
+        <td>{{ u.USU_ID }}</td>
+        <td>{{ u.USU_Correo }}</td>
+        <td>{{ u.USU_Contrasena }}</td>
+        <td>{{ u.USU_FechaCreacion | date:'short' }}</td>
+        <td>{{ u.ROL_ID }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
